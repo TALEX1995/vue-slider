@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <!-- Font-Awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- My Script -->
+    <script defer src="script/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel">
+            <i class="fa-solid fa-circle-arrow-left fa-3x" id="prev"></i>
+            <div class="gallery">
+                <img src="img/01.webp" class="active">
+                
+            </div>
+            <i class="fa-solid fa-circle-arrow-right fa-3x" id="next"></i>
+        </div>
+        <div class="gallery-thumbnails">
+            <div class="col cover"><img src="img/01.webp" alt=""></div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

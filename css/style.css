@@ -82,23 +82,21 @@
     margin: 0 auto;
 }
 
+.gallery-thumbnails img {
+    cursor: pointer;
+}
+
 .gallery-thumbnails .col {
     width: calc(100% / 5);
     height: 200px;
     position: relative;
 }
 
-.gallery-thumbnails .cover::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
 
 .gallery-thumbnails div:not(.cover) {
     border: 5px solid green;
+}
+
+div.cover {
+    filter: grayscale(1);
 }

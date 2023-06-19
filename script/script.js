@@ -40,8 +40,7 @@ const app = Vue.createApp({
                 this.currentIndex = 0
             } else {
                 this.currentIndex++
-            }
-            
+            }          
         },
 
         decrementIndex () {
@@ -49,9 +48,8 @@ const app = Vue.createApp({
                 this.currentIndex = this.images.length - 1
             } else {
                 this.currentIndex--
-            }
-            
-        }
+            }   
+        },
 
 
     } 

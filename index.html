@@ -43,7 +43,7 @@
         <!-- Gallery thumbnails -->
         <div class="gallery-thumbnails">
             <div :class="{ cover : currentIndex !== i}" class="col" v-for="(image, i) in images">
-                <img :src="image.image" :tilte="image.title">
+                <img :src="image.image" :tilte="image.title" @click="currentIndex = i">
             </div>
             
         </div>

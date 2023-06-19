@@ -23,7 +23,6 @@
 }
 
 
-
 .gallery img,
 .gallery-thumbnails img {
     width: 100%;
@@ -82,7 +81,8 @@
     margin: 0 auto;
 }
 
-.gallery-thumbnails img {
+.gallery-thumbnails img,
+.fa-solid {
     cursor: pointer;
 }
 

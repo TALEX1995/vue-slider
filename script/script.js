@@ -45,11 +45,19 @@ const app = Vue.createApp({
         decrementIndex () {
             if (!this.currentIndex) this.currentIndex = this.images.length - 1
             else this.currentIndex--  
-        },      
+        },  
+        
+        stopAutoChangeImg () {
+            clearInterval(this.autoChangeImg);
+        },
+
+        startAutoChangeImg () {
+            this.autoChangeImg = setInterval(this.incrementIndex , 2000)
+        }
     }, 
 
     mounted () {
-        this.autoChangeInterval = setInterval(this.incrementIndex , 2000)
+        this.startAutoChangeImg()
     }
 })
 

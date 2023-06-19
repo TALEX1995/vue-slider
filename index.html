@@ -29,7 +29,7 @@
             <!-- Gallery -->
             <div class="gallery">
                 <!-- Gallery img and text -->
-                <div class="w-100 h-100" v-for="(image, i) in images"
+                <div class="w-100 h-100 position-relative" v-for="(image, i) in images"
                 v-show="currentIndex === i">
                     <img :src="image.image" :tilte="image.title" :alt="image.text">               
                     <h1>{{ images[i].title }}</h1>

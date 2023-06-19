@@ -22,9 +22,7 @@
     height: 100%;
 }
 
-/* .gallery img {
-    display: none;
-} */
+
 
 .gallery img,
 .gallery-thumbnails img {
@@ -51,9 +49,10 @@
 }
 
 
-.carousel img.active {
+.carousel div.active {
     display: block;
 }
+
 
 
 /* Gallery Thumbnails */

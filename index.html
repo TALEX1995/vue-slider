@@ -36,13 +36,13 @@
                     <p>{{ images[i].text }}</p>
                 </div>
 
-            <!-- Next Button    -->
+            <!-- Next Button  -->
             </div>
             <i @click="incrementIndex" class="fa-solid fa-circle-arrow-right fa-3x" id="next"></i>
         </div>
         <!-- Gallery thumbnails -->
         <div class="gallery-thumbnails">
-            <div class="col cover" v-for="(image, i) in images">
+            <div :class="{ cover : currentIndex !== i}" class="col" v-for="(image, i) in images">
                 <img :src="image.image" :tilte="image.title">
             </div>
             

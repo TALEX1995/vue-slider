@@ -22,9 +22,9 @@
     height: 100%;
 }
 
-.gallery img {
+/* .gallery img {
     display: none;
-}
+} */
 
 .gallery img,
 .gallery-thumbnails img {

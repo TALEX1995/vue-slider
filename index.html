@@ -21,14 +21,20 @@
     <div id="root" class="container">
         <div class="carousel">
             <i class="fa-solid fa-circle-arrow-left fa-3x" id="prev"></i>
-            <div class="gallery">
-                <img src="img/01.webp" class="active">
-                <p>{{ name }}</p>
+            <div class="gallery" v-for="(image, i) in images">
+                <img :src="image.image" :tilte="image.title" :alt="image.text">
+                <div>
+                    <h1>{{ images[i].title }}</h1>
+                    <p>{{ images[i].text }}</p>
+                </div>
+                
             </div>
             <i class="fa-solid fa-circle-arrow-right fa-3x" id="next"></i>
         </div>
         <div class="gallery-thumbnails">
-            <div class="col cover"><img src="img/01.webp" alt=""></div>
+            <div class="col cover">
+                <img v-for="(image, i) in images" :src="image.image" :tilte="image.title">
+            </div>
             
         </div>
     </div>
